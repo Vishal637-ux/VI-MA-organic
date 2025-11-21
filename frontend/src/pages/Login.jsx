@@ -7,7 +7,7 @@ export default function Login() {
   const [form, setForm] = useState({ email: "", password: "" });
 
   const submit = async () => {
-    const res = await axios.post("http://localhost:5000/api/auth/login", form);
+    const res = await axios.post("https://orgfertilizer.onrender.com/api/auth/login", form);
 
     if (res.data.token) {
       login(res.data.token); // 👈 updates global state automatically

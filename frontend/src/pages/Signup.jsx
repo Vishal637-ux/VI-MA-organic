@@ -5,7 +5,7 @@ export default function Signup() {
   const [form, setForm] = useState({
     name: "",
     email: "",
-    password: ""
+    password: "",
   });
 
   const handleChange = (e) => {
@@ -13,7 +13,10 @@ export default function Signup() {
   };
 
   const submit = async () => {
-    const res = await axios.post("http://localhost:5000/api/auth/signup", form);
+    const res = await axios.post(
+      "https://orgfertilizer.onrender.com/api/auth/signup",
+      form
+    );
     alert(res.data.message);
   };
 
