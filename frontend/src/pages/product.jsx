@@ -24,8 +24,6 @@ export default function Products() {
         {search ? `Search results for "${search}"` : "Our Products"}
       </h1>
 
-      <button> Add Product </button>
-
       {filteredProducts.length === 0 ? (
         <p className="text-gray-500 text-lg">No products found...</p>
       ) : (

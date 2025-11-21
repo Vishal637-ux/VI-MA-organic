@@ -37,12 +37,12 @@ export default function Home() {
         </div>
 
         {/* 🔥 Search Inputs */}
-        <div className="max-w-[70%] container mx-auto flex gap-5 mt-10">
+        <div className="container mx-auto mt-10 flex justify-center">
           {/* First input - location (NO function) */}
-          <input
+          {/* <input
             className="bg-white w-[40%] text-xl px-6 py-4 rounded-2xl"
             placeholder="Jalgoan, India"
-          />
+          /> */}
 
           {/* Second input - SEARCH BAR (Working) */}
           <input
